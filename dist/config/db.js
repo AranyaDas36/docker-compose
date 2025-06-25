@@ -15,7 +15,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const mongoose_1 = __importDefault(require("mongoose"));
 const dbConnect = () => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        yield mongoose_1.default.connect("mongodb://localhost:27017/newDB");
+        yield mongoose_1.default.connect("mongodb://mongonetwork:27017/newDB");
         console.log("DB connected successfully...");
     }
     catch (err) {
